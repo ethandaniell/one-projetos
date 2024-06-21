@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafios</title>
+</head>
+<body>
+    
+    <script>
+        //desafio 1
+        function CalculoIMC(altura, peso) {
+            let imc = peso / (alturaMetros * alturaMetros);
+        }
+
+        //desafio 2
+        function fatorial(numero) {
+            if(numero == 0 || numero == 1) {
+                return 1;
+            }
+
+            let fatorial = 1;
+            for(let i = 2; numero >= i; i++) {
+                fatorial *= i;
+            }
+            return fatorial;
+        }
+        //exemplo de uso
+        let numero = 0;
+        let resultado = fatorial(numero);
+        console.log(`O fatorial de ${numero} é ${resultado}`);
+
+        //desafio 3
+        function dolarParaReais(valorDolar) {
+            let cotacao = 4.80;
+            let valorReais = valorDolar * cotacao;
+            return valorReais.toFixed(2); //toFixed = resultado.00
+        }
+        //exemplo de uso
+        let valorDolar = 50;
+        let valorReais = dolarParaReais(valorDolar);
+        console.log(`${valorDolar} dólares equivalem a R$ ${valorReais}`);
+
+        //desafio 4
+        function calcularAreaPerimetroRetangulo(altura, largura) {
+            let area = altura * largura;
+            let perimetro = 2 * (altura + largura);
+
+            console.log(`Área da sala: ${area} metros quadrados`);
+            console.log(`Perímetro da sala: ${perimetro} metros`);
+        }
+        //exemplo de uso
+        let altura = 3;
+        let largura = 5;
+        calcularAreaPerimetroRetangulo(altura, largura);
+        
+        //desafio 5
+        function calcularAreaPerimetroCirculo(raio) {
+            let area = Math.PI * raio * raio;
+            let perimetro = 2 * Math.PI * raio;
+
+            console.log(`Área da sala circular: ${area.toFixed(2)} metros quadrados`);
+            console.log(`Perímetro da sala circular: ${perimetro.toFixed(2)} metros`);
+        }
+        //exemplo de uso
+        let raio = 4;
+        calcularAreaPerimetroCirculo(raio);
+
+        //desafio 6
+        function mostrarTabuada(num) {
+            for(let i = 1; i <= 10; i++) {
+                let resultado = num * i;
+                console.log(`${num} X ${i} = ${resultado}`);
+            }
+        }
+        //exemplo de uso
+        let num = 7; 
+        mostrarTabuada(num);
+
+    </script>
+</body>
+</html>
