@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor-principal: black;
+    --cor-secundaria: white;
+    --cor-terciaria: #22D4FD;
+    --cor-hover: #272727;
+
+    --fonte-principal: "Krona One", sans-serif;
+    --fonte-secundaria: "Montserrat", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
+}
+
+.titulo-destaque {
+    color: var(--cor-terciaria);
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho-menu-link {
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-secundaria);
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.apresentacao {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao-conteudo {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao-conteudo-titulo {
+    font-size: 36px;
+    font-family: var(--fonte-principal);
+}
+
+.apresentacao-conteudo-texto {
+    font-size: 24px;
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    justify-content: space-between;
+}
+
+.apresentacao-links-subtitulo {
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+}
+
+.apresentacao-link-links {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    color: var(--cor-secundaria);
+    width: 378px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 24px;
+    padding: 21.5px 0;
+    text-decoration: none;
+    border: 2px solid var(--cor-terciaria);
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao-link-links:hover {
+    background-color: var(--cor-hover);
+}
+
+footer {
+    color: var(--cor-principal);
+    padding: 24px;
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 24px;
+    font-weight: 400
+}
