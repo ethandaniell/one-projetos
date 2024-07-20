@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <img class="logo" src="./imagens/LogoAlura.png" alt="Logo da Alura">
+        <section class="area-digite">
+            <textarea id="digite" rows="18" placeholder="Digite seu texto"></textarea>
+            <img src="./imagens/atencao.png" alt="Atenção">
+            <div class="botoes">
+                <button class="criptografar">Criptografar</button>
+                <button class="descriptografar">Descriptografar</button>
+            </div>
+        </section>
+        <section class="area-texto">
+            <img class="homem-lupa" src="./imagens/High-quality-products.svg" alt="Imagem de um homem com uma lupa">
+            <div class="texto">
+                <h1>Nenhuma mensagem encontrada</h1>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+            <div  class="resultado" hidden>
+                <textarea id="resultado" rows="20" disabled>Nenhuma mensagem</textarea>
+                <button class="copiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Ethan Daniel baseado na Challenge da Alura.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
