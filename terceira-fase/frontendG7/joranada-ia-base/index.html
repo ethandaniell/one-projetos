@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jornada</title>
-    <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" href="./style/global.css">
     <link rel="stylesheet" href="./index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,10 +25,10 @@
             <nav class="cabecalho__navegacao">
                 <ul class="cabecalho__navegacao--lista">
                     <li class="cabecalho__navegacao--item">
-                        <a href="">Blog</a>
+                        <a href="./paginas/tokyo.html">Blog</a>
                     </li>
                     <li class="cabecalho__navegacao--item">
-                        <a href="">Pacotes de viagem</a>
+                        <a href="./paginas/japao.html">Pacotes de viagem</a>
                     </li>
                     <li class="cabecalho__navegacao--item">
                         <a href="">Contato</a>
@@ -52,7 +52,7 @@
     <main class="container">
         <section class="ofertas">
             <div class="ofertas__titulo">
-                <div class="ofertas__titulo--texto">Ofertas da semana</div>
+                <p class="ofertas__titulo--texto">Ofertas da semana</p>
                 <div class="ofertas__titulo--sublinhado"></div>
             </div>
             <div class="ofertas__cards">
@@ -61,12 +61,12 @@
                         <div class="ofertas__card">
                             <div class="ofertas__card--conteudo">
                                 <header class="ofertas__card--destino">
-                                    <div class="ofertas__card--destino-tipo">HOTEL+AÉREO</div>
+                                    <p class="ofertas__card--destino-tipo">HOTEL+AÉREO</p>
                                     <h2 class="ofertas__card--destino-nome">Japão</h2>
                                 </header>
                                 <div class="ofertas__card--preco">R$ 4000</div>
                                 <div class="ofertas__card--botao">
-                                    <a href="#" class="ofertas__card--botao-texto">Ver detalhes</a href="#">
+                                    <a href="#" class="ofertas__card--botao-texto">Ver detalhes</a>
                                 </div>
                             </div>
                         </div>
@@ -74,13 +74,13 @@
                     <div class="ofertas__cards--item  ofertas__cards--san-andreas">
                         <div class="ofertas__card">
                             <div class="ofertas__card--conteudo">
-                                <div class="ofertas__card--destino">
-                                    <div class="ofertas__card--destino-tipo">HOTEL+AÉREO</div>
-                                    <b class="ofertas__card--destino-nome">San Andreas</b>
-                                </div>
+                                <section class="ofertas__card--destino">
+                                    <p class="ofertas__card--destino-tipo">HOTEL+AÉREO</p>
+                                    <h2 class="ofertas__card--destino-nome">San Andreas</h2>
+                                </section>
                                 <div class="ofertas__card--preco">R$ 3000</div>
                                 <div class="ofertas__card--botao">
-                                    <span class="ofertas__card--botao-texto">Ver detalhes</span>
+                                    <a href="#" class="ofertas__card--botao-texto">Ver detalhes</a>
                                 </div>
                             </div>
                         </div>
@@ -88,13 +88,13 @@
                     <div class="ofertas__cards--item  ofertas__cards--paraiba">
                         <div class="ofertas__card">
                             <div class="ofertas__card--conteudo">
-                                <div class="ofertas__card--destino">
-                                    <div class="ofertas__card--destino-tipo">ALL INCLUSIVE+AÉREO</div>
-                                    <b class="ofertas__card--destino-nome">Paraíba</b>
-                                </div>
+                                <section class="ofertas__card--destino">
+                                    <p class="ofertas__card--destino-tipo">ALL INCLUSIVE+AÉREO</p>
+                                    <h2 class="ofertas__card--destino-nome">Paraíba</h2>
+                                </section>
                                 <div class="ofertas__card--preco">R$ 1200</div>
                                 <div class="ofertas__card--botao">
-                                    <span class="ofertas__card--botao-texto">Ver detalhes</span>
+                                    <a href="#" class="ofertas__card--botao-texto">Ver detalhes</a>
                                 </div>
                             </div>
                         </div>
@@ -102,13 +102,13 @@
                     <div class="ofertas__cards--item  ofertas__cards--manaus">
                         <div class="ofertas__card">
                             <div class="ofertas__card--conteudo">
-                                <div class="ofertas__card--destino">
-                                    <div class="ofertas__card--destino-tipo">ALL INCLUSIVE+AÉREO</div>
-                                    <b class="ofertas__card--destino-nome">Manaus</b>
-                                </div>
+                                <section class="ofertas__card--destino">
+                                    <p class="ofertas__card--destino-tipo">ALL INCLUSIVE+AÉREO</p>
+                                    <h2 class="ofertas__card--destino-nome">Manaus</h2>
+                                </section>
                                 <div class="ofertas__card--preco">R$ 1600</div>
                                 <div class="ofertas__card--botao">
-                                    <span class="ofertas__card--botao-texto">Ver detalhes</span>
+                                    <a href="#" class="ofertas__card--botao-texto">Ver detalhes</a href="#">
                                 </div>
                             </div>
                         </div>
@@ -117,9 +117,9 @@
             </div>
         </section>
 
-        <div class="busca">
+        <section class="busca">
             <div class="busca__titulo">
-                <div class="divusca__titulo--texto">Busque por Categoria</div>
+                <p class="divusca__titulo--texto">Busque por Categoria</p>
                 <div class="busca__titulo--sublinhado"></div>
             </div>
             <div class="busca__categorias">
@@ -156,59 +156,59 @@
                     <b class="busca__categoria--nome">Seguro Viagem</b>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="destinos">
+        <section class="destinos">
             <div class="destinos__titulo">
-                <div class="destinos__titulo--texto">Destinos Populares</div>
+                <p class="destinos__titulo--texto">Destinos Populares</p>
                 <div class="destinos__titulo--sublinhado"></div>
             </div>
             <div class="destinos__lista">
                 <div class="destinos__item">
                     <img class="destinos__item--image" alt="" src="./img/tokyo@2x.png" />
                     <b class="destinos__item--nome">Tokyo</b>
-                    <div class="destinos__item--descricao">
+                    <p class="destinos__item--descricao">
                         Tóquio é uma cidade vibrante e cosmopolita, com seus templos
                         históricos, museus de arte moderna e arranha-céus icônicos.
                         Não perca a chance de mergulhar em sua atmosfera fascinante.
-                    </div>
+                    </p>
                     <div class="destinos__item--botao-container">
                         <div class="destinos__item--botao">
-                            <span class="destinos__item--botao-texto">Ver detalhes</span>
+                            <a href="#" class="destinos__item--botao-texto">Ver detalhes</a>
                         </div>
                     </div>
                 </div>
                 <div class="destinos__item">
                     <img class="destinos__item--image" alt="" src="./img/osaka@2x.png" />
                     <b class="destinos__item--nome">Osaka</b>
-                    <div class="destinos__item--descricao">
+                    <p class="destinos__item--descricao">
                         Osaka é uma cidade agitada e moderna no Japãos. A cidade é
                         famosa por sua gastronomia deliciosa e por ser um excelente
                         ponto de partida para explorar outras cidades japonesas
                         próximas.
-                    </div>
+                    </p>
                     <div class="destinos__item--botao-container">
                         <div class="destinos__item--botao">
-                            <span class="destinos__item--botao-texto">Ver detalhes</span>
+                            <a href="#" class="destinos__item--botao-texto">Ver detalhes</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
 
-        <div class="pagamento">
+        <section class="pagamento">
             <div class="pagamento__titulo">
-                <div class="pagamento__titulo--texto">Condições de Pagamento</div>
+                <p class="pagamento__titulo--texto">Condições de Pagamento</p>
                 <div class="pagamento__titulo--sublinhado"></div>
             </div>
             <div class="pagamento__condicoes">
                 <div class="pagamento__condicoes--descricao">
-                    <dov class="pagamento__condicoes--destaque">Parcelamento em até 12x!</dov>
-                    <div class="pagamento__condicoes--detalhes">
+                    <p class="pagamento__condicoes--destaque">Parcelamento em até 12x!</p>
+                    <p class="pagamento__condicoes--detalhes">
                         Viaje pagando em até 12 parcelas no cartão, à vista no crédito
                         com 5% de desconto ou no Pix com 10% de desconto!
-                    </div>
+                    </p>
                 </div>
                 <div class="pagamento__imagens">
                     <div class="pagamento__imagens--grupo">
@@ -224,20 +224,20 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="depoimentos">
+        <section class="depoimentos">
             <div class="depoimentos__titulo">
                 <b class="depoimentos__titulo--texto">Depoimentos</b>
                 <div class="depoimentos__titulo--sublinhado"></div>
             </div>
             <div class="depoimentos__wrapper">
                 <div class="depoimentos__item">
-                    <div class="depoimentos__texto">
+                    <p class="depoimentos__texto">
                         A Jornada foi uma das melhores agências de viagens que eu
                         já experimentei. O serviço ao cliente foi excepcional, e
                         toda a equipe foi muito atenciosa e prestativa.
-                    </div>
+                    </p>
                     <div class="depoimentos__autor">
                         <img class="depoimentos__autor--foto" src="./img/ellipse-1@2x.png" />
                         <div class="depoimentos__autor--info">
@@ -253,11 +253,11 @@
                     </div>
                 </div>
                 <div class="depoimentos__item">
-                    <div class="depoimentos__texto">
+                    <p class="depoimentos__texto">
                         Recomendo fortemente a agência de viagens Jornada. Eles
                         oferecem um serviço personalizado e de alta qualidade que
                         excedeu minhas expectativas em minha última viagem.
-                    </div>
+                    </p>
                     <div class="depoimentos__autor">
                         <img class="depoimentos__autor--foto" alt="" src="./img/avatar-amari@2x.png" />
                         <div class="depoimentos__autor--info">
@@ -273,11 +273,11 @@
                     </div>
                 </div>
                 <div class="depoimentos__item">
-                    <div class="depoimentos__texto">
+                    <p class="depoimentos__texto">
                         Minha viagem com a Jornada foi incrível! Recomendo muito a
                         agência para quem busca uma experiência emocionante e
                         personalizada.
-                    </div>
+                    </p>
                     <div class="depoimentos__autor">
                         <img class="depoimentos__autor--foto" alt="" src="./img/avatar-lauro@2x.png" />
                         <div class="depoimentos__autor--info">
@@ -294,7 +294,7 @@
                 </div>
 
             </div>
-        </div>
+        </section>
     </main>
 
     <img class="pre-footer__image" alt="" src="./img/pre-footer-image.png" />
@@ -304,16 +304,16 @@
             <div class="footer__logo-container">
                 <img class="footer__logo-icon" alt="" src="./img/logobranco-1@2x.png" />
                 <div class="footer__info-container">
-                    <div class="footer__text-info">
+                    <p class="footer__text-info">
                         Horário de atendimento: 08h - 20h (Segunda a Sábado)
-                    </div>
-                    <div class="footer__text-info">
+                    </p>
+                    <p class="footer__text-info">
                         Desenvolvido por Alura. Projeto fictício sem fins comerciais.
-                    </div>
+                    </p>
                 </div>
             </div>
             <div class="footer__social-media-container">
-                <div class="footer__social-media-text">Acesse nossas redes:</div>
+                <p class="footer__social-media-text">Acesse nossas redes:</p>
                 <div class="footer__social-media-icons">
                     <a href="">
                         <img class="footer__social-media-icon" alt="" src="./img/whatsapp-1.svg" />

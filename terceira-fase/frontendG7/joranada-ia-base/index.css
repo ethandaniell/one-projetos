@@ -1,34 +1,3 @@
-.cabecalho__container {
-    background: var(--preto);
-    width: 100%;
-    padding: 40px 0;
-}
-
-.cabecalho {
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.cabecalho__logo--icone {
-    max-width: 260px;
-}
-
-.cabecalho__navegacao--lista {
-    display: flex;
-    gap: 40px;
-}
-
-.cabecalho__navegacao--item a{
-    color: var(--branco);
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
 .banner__img {
     max-width: 100%;
 }
@@ -42,11 +11,6 @@
     font-weight: 400;
     line-height: 150%;
     margin: 110px auto;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .ofertas {
@@ -318,52 +282,4 @@ span.material-symbols-outlined {
     font-weight: 700;
     line-height: 32px;
     margin-bottom: 8px;
-}
-
-.footer__container {
-    background: var(--preto);
-    width: 100%;
-    padding: 40px 0;
-    margin-top: -4px;
-}
-
-.footer {
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    color: var(--branco, #FFF);
-}
-
-.footer__logo-icon {
-    max-width: 160px;
-    margin-bottom: 16px;
-}
-
-.footer__info-container {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.footer__text-info {
-    color: var(--neutral-c, #F5F5F5);
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 32px; /* 160% */
-}
-
-.footer__social-media-container {
-    text-align: center;
-}
-
-.footer__social-media-text {
-    color: var(--neutral-c, #F5F5F5);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 28px;
-    margin-bottom: 16px;
 }
