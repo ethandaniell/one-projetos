@@ -1,0 +1,265 @@
+:root {
+    --cor-de-fundo: #F5F5F5;
+    --cor-de-fundo-menu: #ffffff;
+    --cor-do-link: #000000;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-do-link);
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--cor-de-fundo-menu);
+}
+
+.cabecalho-logo {
+    max-width: 80px; 
+}
+
+.cabecalho-titulo {
+    font-size: 1.2rem;
+    margin-left: 20px;
+}
+
+.navegacao-lista {
+    display: none;
+}
+
+.navegacao-elemento a {
+    font-size: 0.9rem;
+}
+
+.apresentacao,
+.habilidades,
+.hobbies,
+.projetos,
+.contato {
+    padding: 0px 50px;
+}
+
+.apresentacao-titulo {
+    font-size: 2.2rem;
+}
+
+.apresentacao-subtitulo {
+    font-size: 1.2rem;
+}
+
+.redes {
+    display: flex;
+    gap: 20px;
+    font-size: 1rem;
+}
+
+.habilidades {
+    height: 400px;
+    padding-top: 20px;
+}
+
+.habilidades,
+.contato {
+    background-color: #EAF2FD;
+}
+
+
+.habilidades-titulo,
+.hobbies-titulo,
+.projetos-titulo {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-top: 77px;
+}
+
+.habilidades-lista,
+.hobbies-lista {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.habilidades-elemento,
+.hobbies-elemento {
+    padding: 10px;
+    width: 270px;
+    height: 120px;
+    box-shadow: 2px 2px 9px 2px rgba(0, 0, 0, 0.11);
+    background-color: white;
+}
+
+.habilidades-icone,
+.hobbies-icone {
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.habilidades-nome,
+.hobbies-nome {
+    font-weight: 700;
+    font-size: .8rem;
+    margin-top: 7px;
+    margin-left: 10px;
+}
+
+.projetos-conteiner {
+    display: flex;
+    gap: 25px;
+    margin-top: 80px;
+}
+
+.projetos-descricao {
+    flex-direction: column;
+}
+
+.projetos-nome {
+    color: #464646;
+    font-size: 1.8rem;
+}
+
+.projetos-texto {
+    font-size: 1rem;
+    margin-top: -27px;
+}
+
+.projetos-imagem {
+    box-shadow: 2px 3px 2px 2px rgba(0, 0, 0, 0.548);
+}
+
+.projetos-botoes button{
+    font-size: 1rem;
+    background-color: #2A7AE4;
+    border: none;
+    padding: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.projetos-botoes button:hover {
+    background-color: #0d54b1;
+}
+
+.projetos-botoes a {
+    color: white;
+    font-weight: 400;
+}
+
+.contato {
+    height: 280px;
+    padding-top: 20px;
+    margin-top: 70px;
+}
+
+.contato-titulo {
+    font-size: 2.2rem;
+}
+
+.contato p {
+    line-height: 15px;
+}
+
+footer {
+    padding: 32px;
+    text-align: center;
+    line-height: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+@media (min-width: 768px) {
+    .cabecalho {
+        flex-direction: row;
+    }
+
+    .cabecalho-logo {
+        max-width: 100px;
+    }
+
+    .cabecalho-titulo {
+        font-size: 1.5rem;
+    }
+
+    .navegacao-lista {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-left: 73rem;
+    }
+
+    .navegacao-elemento a {
+        font-size: 1rem;
+    }
+    
+    .apresentacao-titulo {
+        font-size: 3.2rem;
+    }
+
+    .apresentacao,
+    .habilidades,
+    .hobbies,
+    .projetos,
+    .contato {
+        padding: 0px 200px;
+    }
+
+    .habilidades-elemento,
+    .hobbies-elemento {
+        width: 176px;
+        height: 174px;
+    }
+
+    .habilidades-icone,
+    .hobbies-icone {
+        margin-top: 90px;
+    }
+
+    .habilidades-nome,
+    .hobbies-nome {
+        font-weight: 700;
+        font-size: 1rem;
+        margin-left: 10px;
+    }
+
+    .projetos-descricao {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    #projetos-conteiner {
+        flex-direction: row-reverse;
+    }
+
+   .projetos-conteiner {
+    padding: 0px 200px;
+   }
+    
+    .projetos-nome {
+        font-size: 2rem;
+    }
+    
+    .projetos-descricao img {
+        width: 772px;
+    }
+
+    .contato {
+        padding-top: 50px;
+    }
+}
+
