@@ -1,0 +1,16 @@
+{
+  "name": "challenge-alurageek",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "challenge-alurageek": "file:",
+    "cors": "^2.8.5",
+    "json-server": "^1.0.0-beta.3"
+  }
+}

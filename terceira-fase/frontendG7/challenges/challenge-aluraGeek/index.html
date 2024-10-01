@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./mediaQuery/telasGrandes.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="cabecalho-imagem" src="./assets/minecraft-hearts.png" alt="Logo AluraGeek">
+        <h1 class="cabecalho-texto">AluraGeek</h1>
+    </header>
+    <main class="container">
+        <section class="formulario">
+            <form data-formulario>
+                <h2 class="formulario-titulo">Adicionar Produto:</h2>
+                <input class="formulario-input" type="text" placeholder="nome..." required data-nome>
+                <input class="formulario-input" type="text" placeholder="preço..." required data-preco>
+                <input class="formulario-input" type="text" placeholder="imagem..." required data-imagem>
+            </form>
+            <div class="formulario-botoes">
+                <button class="formulario-botoes-guardar">Guardar</button>
+                <button class="formulario-botoes-limpar">Limpar</button>
+            </div>
+        </section>
+        <section class="produtos">
+            <h2 class="produtos-titulo">Meus Produtos:</h2>
+            <ul class="produtos-elementos" data-lista>
+                
+
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-logo">
+            <img class="footer-imagem" src="./assets/minecraft-hearts.png" alt="Logo AluraGeek">
+            <h1 class="footer-texto">AluraGeek</h1>
+        </div>
+        <div class="footer-descricao">
+            <p class="footer-creditos">Desenvolvido por Dandi</p>
+            <p class="footer-alura">Alura Latam- 2024</p>
+        </div>
+    </footer>
+
+    <script src="./js/mostrarProdutos.js" type="module"></script>
+    <script src="./js/criarProduto.js" type="module"></script>
+    <script src="./js/excluirProduto.js" type="module"></script>
+</body>
+</html>

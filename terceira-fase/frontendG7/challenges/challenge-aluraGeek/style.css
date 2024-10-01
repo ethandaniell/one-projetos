@@ -1,0 +1,190 @@
+:root {
+    --menu: #5300C8;
+    --fundoProduto: #5d04d9++;
+    --botao: #03318C;
+}
+
+body {
+    font-family: "IBM Plex Mono", monospace;
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho-texto,
+.formulario-titulo,
+.produtos-titulo,
+.footer-texto {
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.cabecalho-texto,
+.footer-texto {
+    color: white;
+    text-shadow: 3px 1px 1px black;
+}
+
+.cabecalho {
+    background-color: var(--menu);
+    display: flex;
+    gap: 10px;
+    height: 70px;
+    padding: 1.2rem;
+    box-shadow: 2px 6px 2px 3px rgba(0, 0, 0, 0.192);
+}
+
+.cabecalho-imagem,
+.footer-imagem {
+    width: 138px;
+    height: 56px;
+}
+
+.container {
+    padding: 2rem;
+}
+
+.formulario form{
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+}
+
+.formulario-input {
+    border-radius: 30px;
+    border: solid 3px var(--botao);
+    width: 350px;
+    height: 58px;
+    font-weight: 600;
+    font-size: 1rem;
+    padding-left: 13px;
+}
+
+input::placeholder {
+    color: var(--botao);
+    font-family: "IBM Plex Mono", monospace;
+}
+
+.formulario-botoes {
+    padding: 1rem;
+}
+
+.formulario-botoes  button {
+    font-family: "IBM Plex Mono", monospace;
+    margin-top: 30px;
+    width: 164px;
+    height: 55px;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.formulario-botoes  button:hover {
+    cursor: pointer;
+}
+
+.formulario-botoes-guardar {
+    color: white;
+    background: var(--botao);
+    border: none;
+}
+
+.formulario-botoes-guardar:hover {
+    background: rgba(27, 90, 226, 0.568);
+    color: var(--botao);
+}
+
+.formulario-botoes-limpar {
+    color: var(--botao);
+    background: white;
+    border: solid 3px var(--botao);
+}
+
+.formulario-botoes-limpar:hover {
+    background: rgba(202, 208, 235, 0.5);
+}
+
+.produtos-elementos {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 1.2rem;
+    margin-bottom: 97px;
+    overflow-x: auto;
+}
+
+.produtos-elemento {
+    border: solid 3px black;
+    box-shadow: 5px 6px 4px rgba(0, 0, 0, 0.233);
+    background: #5300C8;
+    width: 197px;
+    height: 258px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.produtos-titulo {
+    padding: 3rem;
+}
+
+.produtos-elemento-imagem {
+    width: 169px;
+    height: 174px;
+    margin-top: 6px;
+}
+
+.produtos-elemento-div {
+    display: flex;
+    flex-direction: row;
+    gap: 67px;
+    margin-top: -13px;
+}
+
+.produtos-elemento-descricao {
+    font-weight: 400;
+    font-size: .9rem;
+    color: white;
+}
+
+.produtos-elemento-preco {
+    font-weight: 700;
+    font-size: 1rem;
+    color: white;
+}
+
+.produtos-elemento-excluir {
+    margin-top: 13px;
+    width: 24px;
+    height: 24px;
+}
+
+.produtos-elemento-excluir:hover {
+    cursor: pointer;
+}
+
+footer {
+    background: var(--menu);
+    height: 130px;
+    padding: 3rem;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.footer-descricao {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.footer-alura {
+    font-weight: 100;
+}

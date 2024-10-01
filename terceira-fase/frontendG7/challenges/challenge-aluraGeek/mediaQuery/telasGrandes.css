@@ -1,0 +1,38 @@
+@media (min-width: 768px) {
+    .cabecalho {
+        justify-content: center;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 170px;
+        margin-bottom: 160px;
+    }
+
+    .formulario form {
+        margin-right: 190px;
+        align-items: center;
+    }
+
+    .formulario-titulo {
+        margin: 100px 10px 50px 0px;
+        width: 500px;
+    }
+
+    .formulario-botoes {
+        margin-left: 70px
+    }
+
+    .produtos-titulo {
+        margin-top: 60px;
+    }
+
+    .produtos-elementos {
+        width: 687px;
+        height: 700px;
+        padding: 1rem;
+        box-shadow: 0px 8px 5px 9px rgba(0, 0, 0, 0.226);
+        overflow-y: auto;
+    }
+}
