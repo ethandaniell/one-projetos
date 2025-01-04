@@ -4,7 +4,7 @@ import styles from './NovoVideo.module.css'
 const NovoVideo = () => {
 
     const aoNovoVideoCadastrado = (novoVideo) => {
-        fetch('', {
+        fetch('https://my-json-server.typicode.com/ethandaniell/aluraflix-api/cards', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(novoVideo),

@@ -7,7 +7,7 @@ const Home = () => {
     const [dados, setDados] = useState([]);
 
     useEffect(() => {
-        fetch('') 
+        fetch('https://my-json-server.typicode.com/ethandaniell/aluraflix-api/cards') 
             .then(resposta => {
                 if (!resposta.ok) {
                     throw new Error(`Erro na rede: ${resposta.status}`);
@@ -19,7 +19,7 @@ const Home = () => {
     }, []);
 
     const editar = (videoId, dataAtualizada) => {
-        fetch(`${videoId}`, {
+        fetch(`https://my-json-server.typicode.com/ethandaniell/aluraflix-api/cards/${videoId}`, {
             method: 'PUT',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(dataAtualizada),
@@ -43,7 +43,7 @@ const Home = () => {
     };
 
     const deletar = (videoId) => {
-        fetch(`${videoId}`, {
+        fetch(`https://my-json-server.typicode.com/ethandaniell/aluraflix-api/cards/${videoId}`, {
             method: 'DELETE',
         })
             .then((resposta) => {

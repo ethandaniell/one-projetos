@@ -13,7 +13,7 @@ const Card = ({ id, img, titulo, cor, cardData, aoSalvar, aoExcluir }) => {
     const aoModalFechado = () => setModalAberto(false);
 
     const excluir = () => {
-        fetch(`${id}`, {
+        fetch(`https://my-json-server.typicode.com/ethandaniell/aluraflix-api/cards/${id}`, {
             method: 'DELETE',
         })
             .then((resposta) => {

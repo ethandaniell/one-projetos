@@ -20,7 +20,7 @@ const Modal = ({ aoAbrir, aoFechar, aoSalvar, dadosIniciais }) => {
     };
 
     const salvar = () => {
-        fetch(`${dadosIniciais.id}`, {
+        fetch(`https://my-json-server.typicode.com/ethandaniell/aluraflix-api/cards/${dadosIniciais.id}`, {
             method: 'PUT',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(formData),
