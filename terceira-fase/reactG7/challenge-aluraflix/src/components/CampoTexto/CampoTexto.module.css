@@ -1,0 +1,31 @@
+.campoTexto {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.campoTexto label {
+    padding-bottom: .5rem;
+    font-size: 20px; 
+}
+
+.campoTexto input {
+    background-color: transparent;
+    height: 20px;
+    width: 560px;
+    border: 2px solid rgba(168, 168, 168, 0.158);
+    border-radius: 10px; 
+    padding-left: 1rem;
+    font-size: 20px;
+    color: rgba(168, 168, 168, 0.733);
+}
+
+.campoTexto input:focus {
+    border-color: rgba(0, 0, 0, 0.24);
+    outline: none;
+}
+
+::placeholder {
+    padding-left: 1rem;
+    font-size: 20px;
+}

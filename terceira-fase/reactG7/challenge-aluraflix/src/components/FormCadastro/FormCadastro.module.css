@@ -1,0 +1,64 @@
+.container {
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 9rem;
+}
+
+.container form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.3rem;
+}
+
+.titulo {
+    border-top: 1px solid rgba(168, 168, 168, 0.158);
+    border-bottom: 1px solid rgba(168, 168, 168, 0.158);
+    font-size: 2.2rem;
+    padding: 1.7rem 0;
+    margin-bottom: 4rem;
+    font-weight: 500;
+}
+
+.cabecalho {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.cabecalho h2 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.cabecalho p {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 47px;
+    font-weight: 300;
+}
+
+.botao {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 7.2rem;
+}
+
+.botao div:first-child {
+    border-radius: 15px;
+    box-shadow: 0px 0px 4px 1px #2271d1 inset;
+    border: 2px solid #2271d177;
+}
+
+.botao div:last-child {
+    border-radius: 15px;
+    box-shadow: 0px 0px 4px 1px white inset;
+    border: 2px solid white;
+}
+
+.botao div:hover {
+    border-radius: 15px;
+    box-shadow: 0px 0px 4px 1px #032b5c8a inset;
+    border: 2px solid #032b5c8a;
+}

@@ -1,0 +1,35 @@
+.campoMensagem {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 100%;
+}
+
+.campoMensagem label {
+    padding-bottom: .5rem;
+    font-size: 20px; 
+}
+
+.campoMensagem textarea {
+    font-family: var(--fonte);
+    background-color: transparent;
+    border: 2px solid rgba(168, 168, 168, 0.158);
+    border-radius: 10px; 
+    padding-left: 1rem;
+    padding-top: 1.2rem;
+    font-size: 20px;
+    height: 220px;
+    width: 573px;
+    color: rgba(168, 168, 168, 0.733);
+}
+
+.campoMensagem textarea:focus {
+    border-color: rgba(0, 0, 0, 0.24);
+    outline: none;
+}
+
+::placeholder {
+    margin: 4rem;
+    font-size: 20px;
+}
